@@ -1,0 +1,151 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+}
+
+img{
+    display: block;
+    width: 100%;
+}
+
+.main-header{
+    padding: 0 20px; 
+}
+.main-header__title{
+    text-align: center;
+    font-size: 2.5em;
+    margin: 10px 0;
+    color: #454546;
+}
+
+/* *************Ocultar menú************* */
+.main-nav{
+    display: none;
+}
+
+.main-header__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.icon-menu{
+    font-size: 1.5em;
+    border: 1px solid #454546;
+    display: block;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.main-header__btn{
+    display: block;
+    padding: 10px 25px;
+    color: #454546;
+    border: 1px solid #454546;
+    text-decoration: none;
+}
+
+.main-header__input{
+    display: block;
+    padding: 10px;
+}
+
+/* **********************Style by slider*********************** */
+.container-slider{
+    margin: 50px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.slider{
+    display: flex;
+    width: 800%; /*800% porque son 8 imagenes*/
+    height: 300px;
+    margin-left: -100%;
+    position: relative;
+}
+
+.slider:before{
+    content: "";
+    position: absolute;
+    z-index: 500;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0,0,0,0.5);
+    height: 100%;
+}
+
+.slider__section{
+width: 100%;
+position: relative;
+}
+
+.slider__img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slider__btn{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.7);
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    font-weight: bold;
+    font-family: monospace;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.slider__btn:hover{
+    background-color: #fff;
+}
+
+.slider__btn--left{
+    left: 10px;
+}
+
+.slider__btn--right{
+    right: 10px;
+}
+
+.slider__content{
+   position: absolute; 
+   top: 50%;
+   left: 50%;
+   color: white;
+   transform: translate(-50%, -50%);
+   width: 60%;
+   text-align: center;
+   z-index: 1000;
+}
+
+.slider__title{
+    font-size: 2.2em;
+    margin: 0;    
+}
+
+.slider__txt{
+    margin: 5px 0;
+}
+
+.slider__link{
+    display: block;
+    border: 1px solid #FF4e00;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5%;
+    width: 150px;
+    margin: 20px auto;
+}
